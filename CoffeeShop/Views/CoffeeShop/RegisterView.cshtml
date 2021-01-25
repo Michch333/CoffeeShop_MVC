@@ -1,0 +1,19 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model RegisterViewModel
+
+<form class="text-center" asp-controller="CoffeeShop" asp-action="RegistrationConformation">
+    <label asp-for="@Model.Email">Email Address</label>
+    <input asp-for="@Model.Email" />
+    <br />
+    <label asp-for="@Model.UserName">User Name</label>
+    <input asp-for="@Model.UserName"/>
+    <br />
+    <label asp-for="@Model.Password">Password</label>
+    <input type="password" asp-for="@Model.Password" />
+    <br />
+    <button type ="submit">Register</button>
+</form>
