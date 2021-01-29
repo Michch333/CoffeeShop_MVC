@@ -15,5 +15,9 @@
     <label asp-for="@Model.Password">Password</label>
     <input type="password" asp-for="@Model.Password" />
     <br />
+    <label>Favorite Drink</label>
+    <select asp-for="FavoriteDrink" class="form-control" asp-items="Html.GetEnumSelectList<DrinkType>()">
+        <option>Favorite Drink:</option>
+    </select>
     <button type ="submit">Register</button>
 </form>

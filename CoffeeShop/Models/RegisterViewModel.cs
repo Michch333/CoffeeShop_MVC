@@ -10,5 +10,13 @@ namespace CoffeeShop.Models
         public string UserName { get; set; }
         public string Email { get; set; }
         public string Password { get; set; }
+        public DrinkType FavoriteDrink { get; set; }
+    }
+
+    public enum DrinkType
+    {
+        Latte,
+        Coffee,
+        Espresso
     }
 }
